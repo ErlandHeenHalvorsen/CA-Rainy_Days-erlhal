@@ -1,0 +1,57 @@
+:root {
+  --rainyBlue: #0a3641;
+  --mainWhite: #fdf8f1;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.navmenu {
+  display: block;
+  border: 1px solid;
+  width: 100%;
+}
+#rainyLogo {
+  display: flex;
+  position: relative;
+  right: 30px;
+  scale: 70%;
+  border: 1px solid;
+  margin-right: 50px;
+}
+.navmenu {
+  display: inline-flex;
+  text-align: center;
+}
+
+.links,
+.linkscart {
+  display: flex;
+  position: relative;
+  margin-right: 40px;
+  margin-top: 70px;
+  text-decoration: none;
+}
+.links:hover {
+  box-shadow: 0 5px 5px 0 black;
+}
+.linkscart:hover {
+  box-shadow: 0 5px 5px 0 black;
+}
+.links {
+  display: inline-flex;
+  text-align: center;
+  font-size: 1.9rem;
+  color: var(--mainWhite);
+  background-color: var(--rainyBlue);
+  margin-bottom: auto;
+  padding: 10px 30px 10px 30px;
+  border-radius: 16px;
+}
+.linkscart {
+  font-size: 4rem;
+  margin-top: 60px;
+  margin-left: 20px;
+  padding: 0;
+  margin: auto;
+}
