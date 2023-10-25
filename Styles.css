@@ -10,14 +10,15 @@
   display: block;
   border: 1px solid;
   width: 100%;
+  height: 200px;
 }
 #rainyLogo {
   display: flex;
   position: relative;
-  right: 30px;
-  scale: 70%;
-  border: 1px solid;
-  margin-right: 50px;
+  bottom: 6px;
+  right: 50px;
+  scale: 55%;
+  margin-right: 70px;
 }
 .navmenu {
   display: inline-flex;
@@ -28,7 +29,6 @@
 .linkscart {
   display: flex;
   position: relative;
-  margin-right: 40px;
   margin-top: 70px;
   text-decoration: none;
 }
@@ -36,7 +36,7 @@
   box-shadow: 0 5px 5px 0 black;
 }
 .linkscart:hover {
-  box-shadow: 0 5px 5px 0 black;
+  text-shadow: 5px 1px 5px black;
 }
 .links {
   display: inline-flex;
@@ -44,14 +44,19 @@
   font-size: 1.9rem;
   color: var(--mainWhite);
   background-color: var(--rainyBlue);
+  margin-right: 20px;
   margin-bottom: auto;
-  padding: 10px 30px 10px 30px;
-  border-radius: 16px;
+  padding: 8px 40px 8px 40px;
+  border-radius: 6px;
 }
+.links:last-child {
+  margin-right: 0;
+}
+
 .linkscart {
-  font-size: 4rem;
-  margin-top: 60px;
-  margin-left: 20px;
+  font-size: 4.4rem;
+  bottom: 19px;
+  left: 5px;
   padding: 0;
-  margin: auto;
 }
+/*Above is the desktop styling*/
