@@ -6,11 +6,20 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: var(--mainWhite);
+  overflow-x: hidden;
+}
+/* Below is header styling*/
 .navmenu {
   display: block;
   border: 1px solid;
   width: 100%;
-  height: 200px;
+  height: 180px;
+  background-color: rgba(231, 228, 228, 0.82);
+  margin-bottom: 0;
+  display: inline-flex;
+  text-align: center;
 }
 #rainyLogo {
   display: flex;
@@ -20,10 +29,6 @@
   scale: 55%;
   margin-right: 70px;
 }
-.navmenu {
-  display: inline-flex;
-  text-align: center;
-}
 
 .links,
 .linkscart {
@@ -31,6 +36,7 @@
   position: relative;
   margin-top: 70px;
   text-decoration: none;
+  transition: 0.3s;
 }
 .links:hover {
   box-shadow: 0 5px 5px 0 black;
@@ -60,3 +66,96 @@
   padding: 0;
 }
 /*Above is the desktop styling*/
+/* Below is the home content*/
+.head-picture-container {
+  position: relative;
+  display: flexbox;
+  bottom: 4px;
+}
+#head-picture {
+  max-width: 100%;
+  margin-top: 0;
+}
+.CTA-Button {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+#CTA-link {
+  background-color: var(--rainyBlue);
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  display: flex;
+  position: relative;
+  padding: 20px 10px 20px 10px;
+  border-radius: 8px;
+}
+/*card*/
+.CTAcard {
+  margin-top: 20px;
+  display: inline-flex;
+  max-width: 570px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.CTAcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-container {
+  padding: 2px 16px;
+  letter-spacing: 1px;
+}
+.card-container a {
+  position: relative;
+  top: 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: var(--rainyBlue);
+  color: var(--mainWhite);
+  padding: 6px 5px 6px 5px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.card-container a:hover {
+  box-shadow: 3px 1px 4px 0 black;
+}
+#homeJacket {
+  border-radius: 5px 5px 0 0;
+}
+.ecoCard {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  max-width: 600px;
+  letter-spacing: 1px;
+}
+.ecoCard i {
+  position: relative;
+  left: 250px;
+  top: 300px;
+  scale: 150%;
+}
+.main-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+/*above is the home content*/
+/*Below is Product content*/
+.product-cards {
+  display: flex;
+  max-width: 100%;
+}
+.card {
+  display: inline-block;
+  float: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: 15px 15px 15px 15px;
+  text-align: left;
+  padding: 4px 6px 2px 6px;
+}
