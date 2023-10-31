@@ -146,16 +146,49 @@ body {
 }
 /*above is the home content*/
 /*Below is Product content*/
-.product-cards {
+.h1-jackets {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.product-cards,
+.card-last {
   display: flex;
-  max-width: 100%;
+  flex-wrap: wrap;
 }
 .card {
-  display: inline-block;
-  float: right;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 100%;
+  flex: 1;
+  max-width: auto;
   margin: 15px 15px 15px 15px;
   text-align: left;
   padding: 4px 6px 2px 6px;
 }
+.card-last {
+  display: inline-block;
+  margin: 15px 15px 15px 15px;
+  text-align: left;
+  padding: 4px 6px 2px 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 380px;
+}
+.price {
+  color: rgb(72, 71, 71);
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+.buy-button {
+  font-size: 1.1em;
+  background-color: var(--rainyBlue);
+  color: var(--mainWhite);
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  margin-left: 15px;
+  border-radius: 6px;
+  box-shadow: 1px 3px 5px black;
+}
+/*above is product content*/
