@@ -247,8 +247,19 @@ body {
 }
 /*about*/
 /*Contact*/
+.conatctPage {
+  display: flex;
+}
+.contactPage h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
 .contactForm {
   display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 .contactForm input,
 textarea {
@@ -271,4 +282,25 @@ textarea {
   width: 200px;
   font-size: 1.5em;
   padding: 10px 5px 10px 5px;
+}
+
+.contactImg img {
+  display: flex;
+  margin: 10px 30px 10px 10px;
+  padding: 5px 5px 5px 5px;
+}
+.contactInfo {
+  padding: 0 5px 10px 5px;
+}
+.belowForm {
+  position: relative;
+  top: 450px;
+  right: 400px;
+  display: inline-flexbox;
+  max-width: 500px;
+  padding: 0 5px 0 5px;
+  margin-bottom: 30px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
 }
