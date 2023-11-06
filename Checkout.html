@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Checkout/Rainy-days</title>
     <link rel="stylesheet" href="Styles.css" />
     <script
       src="https://kit.fontawesome.com/7c44b2e8ec.js"
@@ -12,22 +12,115 @@
   </head>
   <body>
     <header>
-      <div>
-        <nav class="navmenu">
-          <a href="index.html" id="rainyLogo">
-            <img src="img/RainyDays_Logo.png" alt="Home Logo"
-          /></a>
-          <a class="links" href="index.html">Home</a>
-          <a class="links" href="Jackets.html">Jackets</a>
-          <a class="links" href="AboutUs.html">About</a>
-          <a class="links" href="Contact.html">Contact</a>
-          <a class="linkscart" href="Checkout.html">
-            <i class="fa-solid fa-basket-shopping" style="color: #0a3641"></i>
-          </a>
-          <a href=""></a>
+      <img class="logo" src="img/RainyDays_Logo.png" alt="Rainy days logo" />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Jackets.html">Jackets</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li>
+            <a id="basket" href="Checkout.html"
+              ><i class="fa-solid fa-basket-shopping" style="color: #0a3641"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu">
+        <label for="hamburger-menu"> <i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+
+        <nav class="hamburger">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="check-out">
+        <div class="check-out_form">
+          <form action="Checkout.html">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="full-name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <label for="card">Card nr</label>
+            <input
+              type="text"
+              name="card"
+              id="card"
+              placeholder="xxxx xxx xxxx"
+            />
+            <label for="ccv">ccv</label>
+            <input type="text" id="ccv" name="ccv" />
+            <label for="submit"></label>
+            <input type="submit" id="Buy_Now" value="Buy Now" />
+          </form>
+          <div class="check-out_jacket">
+            <img
+              src="img/RainyDays_Jacket1.jpg"
+              alt="Oransje vindstopper med belte, hette og refleks"
+            />
+            <h2>Trailblazer Pro Waterproof Jacket</h2>
+            <p class="price">$200,-</p>
+            <h1>
+              Nature's Bliss Eco-Friendly Rain Jacket: Embrace the Elements
+              Responsibly
+            </h1>
+            <h2>Introducing the Nature's Bliss Eco-Friendly Rain Jacket</h2>
+            <p>
+              the pinnacle of sustainable rainwear that lets you embrace the
+              great outdoors responsibly. Crafted with a deep commitment to our
+              planet, this rain jacket marries cutting-edge technology with
+              eco-conscious materials to offer you an exceptional outdoor
+              experience while treading lightly on the Earth.
+            </p>
+            <h2>Sustainability Meets Performance</h2>
+            <p>
+              Nature's Bliss is more than just a rain jacket; it's a testament
+              to our dedication to sustainability. Constructed from
+              high-quality, recycled materials, this jacket offers outstanding
+              waterproof and windproof protection. Its innovative design
+              combines functionality and environmental responsibility
+              seamlessly.
+            </p>
+            <h2>Durable and Versatile:</h2>
+            <p>
+              Whether you're embarking on a weekend hiking adventure, camping
+              under the starry sky, or exploring the natural wonders of your
+              favorite national park,rain jacket is your reliable companion. Its
+              durable construction ensures it can withstand th this e rigors of
+              your outdoor pursuits, while its versatility makes it suitable for
+              a variety of activities.
+            </p>
+            <h2>A Greener Choice:</h2>
+            <p>
+              By choosing Nature's Bliss, you're not only investing in superior
+              rainwear but also contributing to a cleaner planet. Every purchase
+              reflects your commitment to reducing waste and conserving
+              resources, making your outdoor adventures even more meaningful.
+            </p>
+            <h2>Join the Sustainable Adventure</h2>
+            <p>
+              Join the movement of outdoor enthusiasts who are passionate about
+              both nature and adventure. Nature's Bliss is more than just a rain
+              jacket; it's a symbol of your dedication to responsible
+              exploration and sustainable living.
+            </p>
+            <h2>Experience Bliss with Nature:</h2>
+            <p>
+              Embrace the elements in style and comfort with the Nature's Bliss
+              Eco-Friendly Rain Jacket. It's time to redefine your outdoor
+              adventures, where the rain doesn't just refresh your spirit but
+              also rejuvenates the planet. Make the environmentally conscious
+              choice and explore the world with Nature's Bliss.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

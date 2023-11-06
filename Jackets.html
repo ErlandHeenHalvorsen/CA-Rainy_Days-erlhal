@@ -12,19 +12,30 @@
   </head>
   <body>
     <header>
-      <div>
-        <nav class="navmenu">
-          <a href="index.html" id="rainyLogo">
-            <img src="img/RainyDays_Logo.png" alt="Home Logo"
-          /></a>
-          <a class="links" href="index.html">Home</a>
-          <a class="links" href="Jackets.html">Jackets</a>
-          <a class="links" href="AboutUs.html">About</a>
-          <a class="links" href="Contact.html">Contact</a>
-          <a class="linkscart" href="Checkout.html">
-            <i class="fa-solid fa-basket-shopping" style="color: #0a3641"></i>
-          </a>
-          <a href=""></a>
+      <img class="logo" src="img/RainyDays_Logo.png" alt="Rainy days logo" />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Jackets.html">Jackets</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li>
+            <a id="basket" href="Checkout.html"
+              ><i class="fa-solid fa-basket-shopping" style="color: #0a3641"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu">
+        <label for="hamburger-menu"> <i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+
+        <nav class="hamburger">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>

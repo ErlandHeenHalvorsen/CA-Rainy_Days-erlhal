@@ -12,57 +12,47 @@ body {
   overflow-x: hidden;
 }
 /* Below is header styling*/
-.navmenu {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 10%;
-}
-
-#rainyLogo {
-  cursor: pointer;
-
-  padding: auto;
-  margin: auto;
-  width: 200px;
-}
-
-.links,
-.linkscart {
-  display: inline-block;
-  text-align: center;
-  margin: auto;
-  margin-top: 70px;
+li,
+a {
+  font-weight: 500;
+  font-size: 1.2em;
   text-decoration: none;
-  transition: 0.3s;
-}
-.links:hover {
-  box-shadow: 0 5px 5px 0 black;
-}
-.linkscart:hover {
-  text-shadow: 5px 1px 5px black;
-}
-.links {
-  font-size: 2.2rem;
-  color: var(--mainWhite);
   background-color: var(--rainyBlue);
-
-  margin-right: 20px;
-
-  max-width: 250px;
-  padding: 10px 0 10px;
+  color: var(--mainWhite);
+  padding: 10px 20px 10px 20px;
   border-radius: 6px;
 }
-.links:last-child {
-  margin-right: 0;
+li,
+#basket {
+  background-color: var(--mainWhite);
+  font-size: 1.8em;
 }
-
-.linkscart {
-  font-size: 4.4rem;
-  bottom: 18px;
-  left: 5px;
-  padding: 0;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
 }
-#bars-menu {
+.logo {
+  cursor: pointer;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  box-shadow: 0 5px 10px 0 black;
+}
+li #basket:hover {
+  box-shadow: none;
+  text-shadow: 5px 5px 10px 5px black;
+}
+.hamburger-menu {
   display: none;
 }
 nav.hamburger {
@@ -79,9 +69,7 @@ input#hamburger-menu:checked ~ nav.hamburger {
 label[for="hamburger-menu"] {
   font-size: 2em;
 }
-#bars-menu,
-nav.hamburger {
-}
+
 nav.hamburger ul {
   list-style-type: none;
   display: inline-block;
@@ -109,18 +97,14 @@ nav.hamburger li a:hover {
   background: white;
 }
 @media (max-width: 700px) {
-  .navmenu {
-    display: flex;
+  .hamburger-menu {
+    display: block;
   }
-  a.links,
-  a.linkscart {
+  .nav_links {
     display: none;
   }
-  a#rainyLogo {
-    display: inline-flex;
-  }
-  #bars-menu {
-    display: block;
+  .main-content {
+    grid-auto-columns: auto auto;
   }
 }
 /*Above is the desktop styling*/
@@ -151,9 +135,28 @@ nav.hamburger li a:hover {
   border-radius: 8px;
 }
 /*card*/
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto auto;
+  max-width: 100%;
+  justify-content: center;
+}
+.CTAcard,
+.ecoCard {
+  display: flex;
+
+  margin: auto;
+  margin-left: 40px;
+  margin-top: 20px;
+  max-width: 570px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 6px;
+}
 .CTAcard {
   margin-top: 20px;
-  display: inline-flex;
+
   max-width: 570px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -167,7 +170,6 @@ nav.hamburger li a:hover {
   letter-spacing: 1px;
 }
 .card-container a {
-  position: relative;
   top: 20px;
   font-size: 1.2em;
   text-decoration: none;
@@ -185,23 +187,17 @@ nav.hamburger li a:hover {
   border-radius: 5px 5px 0 0;
 }
 .ecoCard {
-  position: relative;
   margin-top: 20px;
   display: flex;
   max-width: 600px;
   letter-spacing: 1px;
 }
 .ecoCard i {
-  position: relative;
   left: 250px;
   top: 300px;
   scale: 150%;
 }
-.main-content {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
+
 /*above is the home content*/
 /*Below is Product content*/
 .h1-jackets {
@@ -359,4 +355,47 @@ textarea {
   text-align: justify;
   letter-spacing: 0.5px;
   box-sizing: border-box;
+}
+.showcase {
+  padding: 5px 5%;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.showcase h1,
+h2,
+p,
+h3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.check-out {
+  display: grid;
+  padding: 5px 10%;
+  grid-template-columns: auto;
+}
+.check-out_form {
+  display: inline-grid;
+  width: auto;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.check-out_form input {
+  width: auto;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.check-out_form form {
+  display: inline-grid;
+  width: 300px;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
 }
