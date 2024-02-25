@@ -206,43 +206,7 @@ nav.hamburger li a:hover {
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
-.product-cards {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-.card {
-  display: inline-grid;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-  max-width: 500px;
-  margin: 15px 5px 15px 5px;
-  text-align: left;
-  padding: 4px 6px 2px 6px;
-}
-@media (max-width: 950px) {
-  .product-cards {
-    grid-template-columns: auto;
-  }
-}
-
-.price {
-  color: rgb(72, 71, 71);
-  font-size: 22px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-align: left;
-}
-.buy-button {
-  font-size: 1.1em;
-  background-color: var(--rainyBlue);
-  color: var(--mainWhite);
-  text-decoration: none;
-  padding: 5px 10px 5px 10px;
-  text-align: center;
-  margin-left: 15px;
-  border-radius: 6px;
-  box-shadow: 1px 3px 5px black;
-}
 /*above is product content
 /*about*/
 #ecoIcon {
