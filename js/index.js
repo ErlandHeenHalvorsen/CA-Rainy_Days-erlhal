@@ -1,5 +1,5 @@
 import { getAllProducts } from "./get-products.js";
-import { listData } from "./utils.js";
+import { renderProductCards } from "./utils.js";
 
 const element = document.getElementById("BestSellers");
 
@@ -8,7 +8,7 @@ async function getProducts() {
     let jackets = await getAllProducts();
     jackets = jackets.filter((obj) => obj.favorite === true);
 
-    listData(jackets, element);
+    renderProductCards(jackets, element);
   } catch (error) {
     console.log(error);
   }
