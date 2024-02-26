@@ -17,5 +17,3 @@ async function getSingleProduct(id) {
 }
 
 export { getAllProducts, getSingleProduct };
-
-// lage en funksjon som henter get single products og henter den. fra denne.

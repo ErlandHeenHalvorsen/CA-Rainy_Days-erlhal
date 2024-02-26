@@ -15,5 +15,3 @@ async function getProducts() {
 }
 
 getProducts();
-
-// bruk denne til å hente ut alle produktene.

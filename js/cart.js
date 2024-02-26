@@ -1,35 +1,28 @@
 function getCart() {
-  // get cart
-  let cart = localStorage.get("rainy-cart");
+  let cart = localStorage.getItem("rainy-cart");
 
-  if (cart) {
-    cart = JSON.parse(cart);
-
-    return cart;
-  }
-}
-
-function addToCart(id) {
-  // get cart
-  let cart = localStorage.get("rainy-cart");
-
-  //   cart ? (cart = JSON.parse(cart)) : (cart = []);
-
-  // if cart exist parse JSON
-  // else create new array
   if (cart) {
     cart = JSON.parse(cart);
   } else {
     cart = [];
   }
 
-  // find product
-  let product = cart.find((item) => item === id);
+  return cart;
+}
 
-  // if product is not in cart, push ID to array
-  // set localstorage and return cart
-  if (!product) {
-    cart.push(product);
+function addToCart(id) {
+  let cart = localStorage.getItem("rainy-cart");
+
+  if (cart) {
+    cart = JSON.parse(cart);
+  } else {
+    cart = [];
+  }
+
+  let productIndex = cart.findIndex((item) => item === id);
+
+  if (productIndex === -1) {
+    cart.push(id);
     localStorage.setItem("rainy-cart", JSON.stringify(cart));
 
     return cart;
@@ -37,14 +30,16 @@ function addToCart(id) {
 }
 
 function removeFromCart(id) {
-  // get cart from localstorage
-  let cart = localStorage.get("rainy-cart");
-  cart = JSON.parse(cart);
+  let cart = localStorage.getItem("rainy-cart");
 
-  // get product index
-  let index = cart.indexOf((item) => item === id);
+  if (cart) {
+    cart = JSON.parse(cart);
+  } else {
+    return;
+  }
 
-  // if product index is 0 or more, remove from array and set localstorage and return cart
+  let index = cart.findIndex((item) => item === id);
+
   if (index >= 0) {
     cart.splice(index, 1);
     localStorage.setItem("rainy-cart", JSON.stringify(cart));

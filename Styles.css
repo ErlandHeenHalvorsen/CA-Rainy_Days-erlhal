@@ -206,7 +206,13 @@ nav.hamburger li a:hover {
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
-
+.container {
+  display: flex;
+}
+#productList {
+  display: flex;
+  flex-direction: column;
+}
 /*above is product content
 /*about*/
 #ecoIcon {
